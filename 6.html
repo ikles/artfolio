@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>6. Наше производство</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Наружная реклама</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <section class="s-banner section">
+        <div class="banner__bg banner__bg--2">
+          <div class="contain">
+            <div class="banner__row">
+              <div class="banner__content _w807">              
+                <h2 class="h2 _wh">Наше производство</h2>
+                <p>Наша профессиональная команда не боится сложных задач: производство  рекламных конструкций, изготовление объектов наружной рекламы со  светодиодной или неоновой подсветкой, оформление фасадов зданий любой  сложности, брендирование транспорта, оформление выставок и многое  другое, что помогает компании выделяться на рынке среди конкурентов.</p>
+                <p>Отличительная особенность нашей компании – собственное  рекламное производство, которое дает возможность выполнять все заказы на высочайшем уровне, строго в установленные сроки, по приемлемой  стоимости и с гарантией качества.</p>
+                <p>В рабочем арсенале мы используем самые современные и  инновационные технологии для производства рекламной продукции,  оригинальный дизайн и только долговечные материалы. Мы гордимся  множеством довольных клиентов, среди которых известные компании не  только из Твери, но и Москвы и Санкт-Петербурга. На все виды работ  компания «Артфолио» предоставляет комплексную гарантию.</p>
+              </div>
+              <div class="banner-img__w2">
+               <picture>
+                <source srcset="./img/proziv.jpg" type="image/jpeg" media="(min-width:641px)" /> <!--меньше этого будет другая-->
+                <source srcset="./img/proziv-mob.jpg" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->              
+                <img src="./img/proziv.jpg" alt="">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>        
+    </section>
+
+    <section class="s-comp-prof section">
+      <div class="contain">
+        <div class="comp-prof _inv">
+          <div class="comp-prof__item">
+            <div class="comp-prof__img"><img src="img/comp-prof-3.png"></div>
+            <div class="comp-prof__title">Собственное производство</div>
+            <p class="comp-prof__txt">Полный цикл производства рекламной продукции на современном оборудовании. Контроль качества на всех этапах.</p>
+          </div>
+          <div class="comp-prof__item">
+            <div class="comp-prof__img"><img src="img/comp-prof-0.png"></div>
+            <div class="comp-prof__title">Инновационные технологии</div>
+            <p class="comp-prof__txt">Используем самые современные технологии для производства рекламной продукции с применением долговечных материалов.</p>
+          </div>
+          <div class="comp-prof__item">
+            <div class="comp-prof__img"><img src="img/comp-prof-1.png"></div>
+            <div class="comp-prof__title">Команда профессионалов</div>
+            <p class="comp-prof__txt">Наши сотрудники хорошо знают технологию производства, особенности различных форматов и тонкости послепечатной обработки.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="s-video section">
+      <div class="contain">
+        <a href="" class="adv-comp__video _stat">
+          <img src="img/adv-comp-video.jpg" class="adv-comp__vid-img">
+        </a>
+      </div>
+    </section>
+    <section class="s-need section">
+      <div class="contain">
+        <div class="need__w">
+          <div class="h2 _wh _tac _nob _low">Хотите узнать больше о нашем производстве?</div>
+          <p class="need__txt">Оставьте заявку — наш менеджер свяжется с вами и ответит на все вопросы</p>
+          @@include('var/_need__form.html')
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  @@include('var/_footer.html')    
+</div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

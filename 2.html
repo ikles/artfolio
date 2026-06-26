@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>2. Доставка и оплата</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Доставка и оплата</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <section class="s-banner section">
+        <div class="banner__bg">
+          <div class="contain">
+            <div class="banner__content">              
+              <h2 class="h2 _wh">Доставка <br> и оплата</h2>
+              <p class="banner__txt">Удобные способы получения заказов и гибкие варианты оплаты. Доставим вашу рекламную продукцию в любую точку Твери и области.</p>
+            </div>
+          </div>
+          <div class="banner-img__w">
+            <picture>
+              <source srcset="./img/paym-bg.jpg" type="image/jpeg" media="(min-width:641px)" /> <!--меньше этого будет другая-->
+              <source srcset="./img/paym-bg-mob.jpg" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->              
+            <img src="./img/paym-bg.jpg" alt="">
+            </picture>
+          </div>
+        </div>        
+      </section>
+      <section class="s-deliv section">
+        <div class="contain">
+          <div class="deliv__w">
+            <div class="deliv__item">              
+              <div class="deliv__img"><img src="img/deliv-1.png"></div>              
+              <div class="deliv__name-w">
+                <div class="deliv__name">Собственная доставка
+                </div>
+                <div class="deliv__price">500 ₽</div>
+                <p class="deliv__txt">Доставка нашим транспортом по Твери и Тверской области. Бережная транспортировка и разгрузка.</p>
+              </div>
+              <ul>
+                <li> Доставка до объекта</li>
+                <li> Подъем на этаж (при необходимости)</li>
+                <li> Контроль сохранности изделий</li>
+                <li> Соблюдение сроков</li>
+              </ul>
+            </div>
+            <div class="deliv__item">              
+              <div class="deliv__img"><img src="img/deliv-2.png"></div>              
+              <div class="deliv__name-w">
+                <div class="deliv__name">Самовывоз</div>
+                <div class="deliv__price">Бесплатно</div>
+                <p class="deliv__txt">Вы можете забрать заказ самостоятельно с нашего склада в Твери.</p>
+              </div>
+              <ul>
+                <li> Адрес: г. Тверь, дер. Кривцово 84А</li>
+                <li> Режим работы: Пн-Пт, 9:00 - 18:00</li>
+                <li> Предварительная договоренность</li>
+                <li> Проверка заказа при получении</li>
+              </ul>
+            </div>
+            <div class="deliv__item">              
+              <div class="deliv__img"><img src="img/deliv-3.png"></div>              
+              <div class="deliv__name-w">
+                <div class="deliv__name">Транспортные компании</div>
+                <div class="deliv__price">По тарифам ТК</div>
+                <p class="deliv__txt">Отправка в любой регион России через проверенных перевозчиков.</p>
+              </div>
+              <ul>
+                <li> СДЭК</li>
+                <li> Деловые линии</li>
+                <li> Контроль сохранности изделий</li>
+                <li> Почта России (для малогабаритных заказов)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-zon section">
+        <div class="contain">
+          <div class="zon__w">
+            <div class="h2 _wh">Зоны доставки по Твери и области</div>
+            <div class="zon__row">
+              <div class="zon__item">
+                <div class="zon__item-w">
+                  <div class="zon__img"><img src="img/zon-1.jpg"></div>
+                  <div class="zon__name">Зона 1</div>
+                  <div class="zon__del">Доставка: 1 день</div>
+                  <div class="zon__loc">Центральные районы Твери</div>
+                </div>
+                <ul>                  
+                  <li>Доставка до объекта</li>
+                  <li>Пролетарский район</li>
+                  <li>Заволжский район</li>
+                  <li>Московский район</li>
+                </ul>
+              </div>
+              <div class="zon__item">
+                <div class="zon__item-w">
+                  <div class="zon__img"><img src="img/zon-2.jpg"></div>
+                  <div class="zon__name">Зона 2</div>
+                  <div class="zon__del">Доставка: 1-2 день</div>
+                  <div class="zon__loc">Ближайшие пригороды (до 30 км)</div>
+                </div>
+                <ul>
+                  <li>Сахарово</li>
+                  <li>Мамоново</li>
+                  <li>Эммаус</li>
+                  <li>Никулино</li>
+                  <li>Бобачёво</li>
+                </ul>
+              </div>
+              <div class="zon__item">
+                <div class="zon__item-w">
+                  <div class="zon__img"><img src="img/zon-3.jpg"></div>
+                  <div class="zon__name">Зона 3</div>
+                  <div class="zon__del">Доставка: 2-3 день</div>
+                  <div class="zon__loc">Тверская область</div>
+                </div>
+                <ul>
+                  <li>Конаково</li>
+                  <li>Вышний Волочек</li>
+                  <li>Ржев</li>
+                  <li>Торжок</li>
+                  <li>Кимры</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-payment section">
+        <div class="contain">
+          <div class="payment__w">            
+            <h2 class="h2">Способы оплаты</h2>            
+            <div class="payment__row">
+              <div class="payment__item">
+                <div class="payment__img"><img src="img/payment-1.svg"></div>
+                <div class="payment__name">Наличный расчет</div>
+                <p class="payment__txt">При самовывозе или доставке курьеру</p>
+              </div>
+              <div class="payment__item">
+                <div class="payment__img"><img src="img/payment-2.svg"></div>
+                <div class="payment__name">Банковская карта</div>
+                <p class="payment__txt">Visa, MasterCard, МИР</p>
+              </div>
+              <div class="payment__item">
+                <div class="payment__img"><img src="img/payment-3.svg"></div>
+                <div class="payment__name">Безналичный расчет</div>
+                <p class="payment__txt">Для юридических лиц с НДС и без</p>
+              </div>
+              <div class="payment__item">
+                <div class="payment__img"><img src="img/payment-4.svg"></div>
+                <div class="payment__name">Онлайн-оплата</div>
+                <p class="payment__txt">Через сайт или по ссылке</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-imp section">
+        <div class="contain">
+          <div class="imp__w">
+            <div class="h2 _wh _tac _nob">Важная информация</div>
+            <div class="imp__row">
+              <div class="imp__item">
+                <div class="imp__item-row">
+                  <div class="imp__item-icon"><img src="img/imp-icon-1.svg"></div>
+                  <div class="imp__itom-name">Упаковка и отправка</div>
+                </div>
+                <p class="imp__txt">Все заказы упаковываются в надежную транспортировочную упаковку, обеспечивающую сохранность изделий при перевозке.</p>
+                <ul >
+                  <li>Крупногабаритные конструкции — в стретч-пленку с картонными уголками</li>
+                  <li>Хрупкие изделия — в пузырчатую пленку и картонные коробки</li>
+                  <li>Полиграфическая продукция — в термоусадочную пленку и картонные тубы</li>
+                </ul>
+              </div>
+              <div class="imp__item">
+                <div class="imp__item-row">
+                  <div class="imp__item-icon"><img src="img/imp-icon-2.svg"></div>
+                  <div class="imp__itom-name">Сроки изготовления</div>
+                </div>
+                <p class="imp__txt">Сроки производства зависят от сложности заказа и загрузки производства:</p>
+                <ul >
+                  <li>Полиграфия — от 1 дня</li>
+                  <li>Широкоформатная печать — от 2 дней</li>
+                  <li>Наружная реклама — от 3-5 дней</li>
+                  <li>Сложные конструкции — от 7 дней</li>
+                </ul>
+              </div>
+              <div class="imp__item">
+                <div class="imp__item-row">
+                  <div class="imp__item-icon"><img src="img/imp-icon-3.svg"></div>
+                  <div class="imp__itom-name">Монтаж и установка</div>
+                </div>
+                <p class="imp__txt">Мы предоставляем услуги по монтажу рекламных конструкций. Выезд специалистов осуществляется после согласования
+                даты и времени.</p>
+                <ul >
+                  <li>Предварительный выезд на объект</li>
+                  <li>Подготовка места установки</li>
+                  <li>Профессиональный монтаж</li>
+                  <li>Проверка работоспособности</li>
+                </ul>
+              </div>
+              <div class="imp__item">
+                <div class="imp__item-row">
+                  <div class="imp__item-icon"><img src="img/imp-icon-4.svg"></div>
+                  <div class="imp__itom-name">Контакты для связи</div>
+                </div>
+                <p class="imp__txt">По вопросам доставки и получения заказов:</p>
+                <ul >
+                  <li>Телефон: +7 (4822) 647-007</li>
+                  <li>Телефон: +7 (904) 351-01-51</li>
+                  <li>Email: zakaz@rpk69.ru</li>
+                  <li>Адрес склада: г. Тверь, дер. Кривцово 84А</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-need section">
+        <div class="contain">
+          <div class="need__w">
+            <div class="h2 _wh _tac _nob">Нужно уточнить детали доставки?</div>
+            <p class="need__txt">Оставьте заявку — наш менеджер свяжется с вами и ответит на все вопросы</p>
+
+            @@include('var/_need__form.html')
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

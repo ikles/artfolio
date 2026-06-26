@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>4. Контакты</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Контакты</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <section class="s-conts section">
+        <div class="contain">
+          <div class="conts__w">            
+            <h2 class="h2">Свяжитесь с нами</h2>
+            <div class="conts__row">
+              <div class="conts__item item">
+                <div class="item-img__w _norad">
+                  <img src="./img/conts-1.png" alt="">
+                </div>
+                <div class="conts__lbl">Телефон</div>
+                <div class="conts__infos">
+                  <a href="tel:+7 (4822) 647-007">+7 (4822) 647-007</a>
+                  <a href="tel:+7 (904) 351-01-51">+7 (904) 351-01-51</a>
+                </div>
+                <div class="conts__info">
+                  Пн-Пт: 9:00 - 18:00
+                </div>
+              </div>
+
+              <div class="conts__item item">
+                <div class="item-img__w _norad">
+                  <img src="./img/conts-2.png" alt="">
+                </div>
+                <div class="conts__lbl">Email</div>
+                <div class="conts__infos">
+                  <a href="mailto:zakaz@rpk69.ru">zakaz@rpk69.ru</a>
+                </div>
+                <div class="conts__info">
+                  Ответим в течение часа
+                </div>
+              </div>
+
+              <div class="conts__item item">
+                <div class="item-img__w _norad">
+                  <img src="./img/conts-3.png" alt="">
+                </div>
+                <div class="conts__lbl">Адрес</div>
+                <div class="conts__infos">
+                  <p>г. Тверь, дер. Кривцово 84А</p>
+                  <span>(напротив магазина Петрович)</span>
+                </div>
+                <div class="conts__info">
+                  Пн-Пт: 9:00 - 18:00
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="s-contsmap">
+        <div class="contain">
+
+          <div class="contsmap__item item">
+            <div class="item-img__w">
+              <img src="./img/cmap.jpg" alt="">
+            </div>
+            <div class="item__body">
+              <div class="contsmap__title">г. Тверь, дер. Кривцово 84А</div>
+              <div class="contsmap__txt">(напротив магазина Петрович)</div>
+              <div class="contsmap__links">
+                <a href="">Яндекс.Карты</a>
+                <a href="">Google Maps</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-vform section">
+        <div class="contain">
+          <div class="vform">
+            <div class="h2 _nob _wh _tac">Отправить сообщение</div>
+            <p class="need__txt">Заполните форму — мы свяжемся с вами в ближайшее время</p>
+            <form>
+              <input type="text" placeholder="Ваше имя">
+              <input type="text" placeholder="+7 ()">
+              <input type="text" placeholder="Ваш E-mail">
+              <textarea placeholder="Ваше сообщение"></textarea>
+              <button class="vform__btn btn">Отправить</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="s-imp section">
+        <div class="contain">
+          <div class="imp__w">
+            <div class="h2 _wh _tac _nob">Реквизиты компании</div>
+            <div class="imp__row">
+              <div class="imp__item">
+                <div class="imp__item-row">
+                  <div class="imp__item-icon"><img src="img/reqv-1.svg"></div>
+                  <div class="imp__itom-name">Юридическая информация</div>
+                </div>
+                <ul class="imp__req">
+                  <li><b>Полное наименование:</b> ООО «Артфолио»</li>
+                  <li><b>ИНН:</b> 6950123456</li>
+                  <li><b>КПП:</b> 695001001</li>
+                  <li><b>ОГРН:</b> 1066950123456</li>
+                </ul>
+              </div>
+              <div class="imp__item">
+                <div class="imp__item-row">
+                  <div class="imp__item-icon"><img src="img/reqv-2.svg"></div>
+                  <div class="imp__itom-name">Банковские реквизиты</div>
+                </div>
+                <ul class="imp__req">
+                  <li><b>Расчетный счет:</b> 40702810123450001234</li>
+                  <li><b>Корреспондентский счет:</b> 30101810123450000123</li>
+                  <li><b>БИК:</b> 042809123</li>
+                  <li><b>Банк:</b> Тверское отделение ПАО Сбербанк</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>      
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
