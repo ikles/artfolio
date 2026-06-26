@@ -1199,6 +1199,18 @@ footer {
     width: 100%;
     height: 100%;
   }
+  &--portf {
+    &:before {
+      content: "";
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 475px;
+      height: 420px;
+      background: linear-gradient(90deg, #181516 0%, rgba(24, 21, 22, 0) 41%);
+    }  
+  }
 }
 
 .banner__row {  
