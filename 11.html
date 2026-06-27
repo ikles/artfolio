@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>11. Услуги</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Услуги</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <section class="s-banner section">
+        <div class="banner__bg">
+          <div class="contain">
+            <div class="banner__content _w50">              
+              <h2 class="h2 _wh">
+                Услуги рекламно<br>-производственной<br> компании «Артфолио»
+              </h2>
+              <p>Мы предлагаем полный цикл услуг по созданию наружной рекламы, печатной  продукции и сувениров. Собственное производство, современное  оборудование и команда профессионалов.</p>
+            </div>
+          </div>
+          <div class="banner-img__w banner-img__w--portf">
+            <picture>
+              <source srcset="./img/servb.jpg" type="image/jpeg" media="(min-width:641px)" /> <!--меньше этого будет другая-->
+              <source srcset="./img/servb-mob.jpg" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->              
+              <img src="./img/servb.jpg" alt="">
+            </picture>
+          </div>
+        </div>        
+      </section>
+      <section class="s-sserv section">
+        <div class="contain">
+          <div class="sserv__row">
+            @@include('var/_sserv__item.html',{
+              "img":"./img/sserv-1.png",
+              "title":"Фрезерная резка",
+              "lbl":"ЧПУ, фигурная резка",
+              "txt":"Высокоточная обработка материалов на современном фрезерном оборудовании с ЧПУ. Создаем сложные фигурные элементы любой геометрии.",
+              "list":"<ul><li>Резка пластика, дерева, алюминия, композита</li><li>Изготовление объемных букв и элементов вывесок</li><li>Точность до 0.1 мм</li></ul>"
+            })
+            @@include('var/_sserv__item.html',{
+              "img":"./img/sserv-2.png",
+              "title":"Плоттерная резка",
+              "lbl":"Контурная резка плёнки, бумаги",
+              "txt":"Автоматическая контурная резка самоклеящихся пленок, бумаги, картона и других рулонных материалов.",
+              "list":"<ul><li>Резка по контуру любой сложности</li><li>Изготовление наклеек, стикеров, трафаретов</li><li>Высокая скорость и точность</li></ul>"
+            })
+            @@include('var/_sserv__item.html',{
+              "img":"./img/sserv-3.png",
+              "title":"Гравировка",
+              "lbl":"Лазерная, механическая",
+              "txt":"Нанесение надписей, логотипов и изображений на различные материалы методом лазерной или механической гравировки.",
+              "list":"<ul><li>Гравировка на металле, стекле, дереве, пластике</li><li>Создание табличек, шильдов, сувениров</li><li>Высокая детализация и долговечность</li></ul>"
+            })
+          </div>
+        </div>
+      </section>
+
+      <section class="s-comp-prof section">
+        <div class="contain">
+          <div class="why-prof _inv">
+            <div class="comp-prof__item">
+              <div class="comp-prof__img"><img src="img/comp-prof-3.png"></div>
+              <div class="comp-prof__title">Собственное производство</div>
+              <p class="comp-prof__txt">Цех 500м² в Твери. Полный контроль качества на всех этапах.</p>
+            </div>
+            <div class="comp-prof__item">
+              <div class="comp-prof__img"><img src="img/why-prof-2.png"></div>
+              <div class="comp-prof__title">Оперативные сроки</div>
+              <p class="comp-prof__txt">Изготовление от 2 дней. Соблюдаем сроки, оговоренные в договоре.</p>
+            </div>
+            <div class="comp-prof__item">
+              <div class="comp-prof__img"><img src="img/why-prof-3.png"></div>
+              <div class="comp-prof__title">3D-визуализация</div>
+              <p class="comp-prof__txt">Бесплатный дизайн-проект. Покажем, как будет выглядеть результат.</p>
+            </div>
+            <div class="comp-prof__item">
+              <div class="comp-prof__img"><img src="img/why-prof-4.png"></div>
+              <div class="comp-prof__title">Гарантия <br>3 года</div>
+              <p class="comp-prof__txt">Предоставляем гарантию на все виды работ и материалы.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+
+
+      <section class="s-need section">
+        <div class="contain">
+          <div class="need__w">
+            <div class="h2 _wh _tac _nob _low">Хотите узнать больше о нашем производстве?</div>
+            <p class="need__txt">Оставьте заявку — наш менеджер свяжется с вами и ответит на все вопросы</p>
+            @@include('var/_need__form.html')
+          </div>
+        </div>
+      </section>
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
