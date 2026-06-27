@@ -40,12 +40,111 @@
             <picture>
               <source srcset="./img/prtfl.jpg" type="image/jpeg" media="(min-width:641px)" /> <!--меньше этого будет другая-->
               <source srcset="./img/prtfl-mob.jpg" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->              
-            <img src="./img/prtfl.jpg" alt="">
+              <img src="./img/prtfl.jpg" alt="">
             </picture>
           </div>
         </div>        
       </section>
-      
+      <section class="s-ptabs section">
+        <div class="ptabs">
+          <div class="cpadding">
+            <div class="ptabs__scroll">
+              <ul class="ptabs__list">
+                <li class="active">Все работы</li>
+                <li>Наружная реклама</li>  
+                <li>широкоформатная печать</li>  
+                <li>полиграфия</li>  
+                <li>сувенирная продукция</li>  
+              </ul>
+            </div>
+          </div>
+          <div class="contain">
+            <div class="ptabs__row">                  
+              @@include('var/_ptabs__item.html',{
+                "cat" : "1",
+                "img":"./img/ptabs1.png",
+                "lbl":"Наружная реклама",
+                "title":"Световой короб для аптеки",
+                "txt":"Изготовление и монтаж светового короба размером 3×1.5м. Светодиодная подсветка, антивандальное исполнение."
+              })
+              @@include('var/_ptabs__item.html',{
+                "cat" : "1",
+                "img":"./img/ptabs2.png",
+                "lbl":"Наружная реклама",
+                "title":"Объемные буквы для ТЦ",
+                "txt":"Объемные световые буквы высотой 80см с индивидуальной подсветкой. Монтаж на фасаде здания."
+              })                
+              @@include('var/_ptabs__item.html',{
+                "cat" : "1",
+                "img":"./img/ptabs3.png",
+                "lbl":"Наружная реклама",
+                "title":"Объемные буквы для ТЦ",
+                "txt":"Отдельно стоящая конструкция высотой 4м с подсветкой логотипа и информационного блока."
+              })
+              @@include('var/_ptabs__item.html',{
+                "cat" : "2",
+                "img":"./img/ptabs6.png",
+                "lbl":"Широкоформатная печать",
+                "title":"Баннер на строительный забор",
+                "txt":"Комплект из 4 двусторонних штендеров с антивандальным покрытием и яркой печатью."
+              })
+              @@include('var/_ptabs__item.html',{
+                "cat" : "3",
+                "img":"./img/ptabs10.png",
+                "lbl":"Полиграфия",
+                "title":"Каталог продукции",
+                "txt":"Разработка дизайна и печать 1000 экземпляров каталога на мелованной бумаге, твердый переплет."
+              })
+              @@include('var/_ptabs__item.html',{
+                "cat" : "4",
+                "img":"./img/ptabs12.png",
+                "lbl":"Сувенирная продукция",
+                "title":"Брендированные ручки",
+                "txt":"2000 штук металлических ручек с лазерной гравировкой логотипа в подарочной упаковке."
+              })
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-padvants section">
+        <div class="contain">
+          <div class="padvants__row">
+            <div class="padvants__item">
+              <p>350+</p>
+              <span>Реализованных проектов</span>
+            </div>
+            <div class="padvants__item">
+              <p>98%</p>
+              <span>Довольных клиентов</span>
+            </div>
+            <div class="padvants__item">
+              <p>15 лет</p>
+              <span>На рынке Твери</span>
+            </div>
+            <div class="padvants__item">
+              <p>3 года</p>
+              <span>Гарантия на работы</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="s-need section">
+        <div class="contain">
+          <div class="need__w _stat">
+            <div class="h2 _wh _tac _nob">Хотите так же качественно?</div>
+            <p class="need__txt">Оставьте заявку — мы подготовим индивидуальное предложение под вашу задачу</p>
+            <div class="need__btn-w">
+              <div class="btn__shadow-wrap">
+                <a href="" class="btn">Получить консультацию</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
     </main>
     @@include('var/_footer.html')    
   </div>

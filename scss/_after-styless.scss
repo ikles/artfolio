@@ -69,6 +69,9 @@
   .products__row {    
     grid-template-columns: repeat(3, 1fr);
   }
+  .padvants__item p {
+    font-size: 42px;
+  }
 }//1439
 
 
@@ -171,6 +174,12 @@
     display: flex;    
     flex-direction: column;
   }
+  .padvants__row {    
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .oprod__row {    
+    grid-template-columns: repeat(2, 1fr);
+  }
 }//1199
 
 @media (max-width : 991px) {
@@ -259,6 +268,28 @@
     padding-left: 20px;
     padding-right: 20px;
   }
+  .ptabs__row {    
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .ptabs {
+    .cpadding {
+      padding-right: 0;
+    }
+  }
+  .ptabs__list {  
+    flex-wrap: nowrap;
+  }
+  .ptabs__scroll {
+    overflow-x: auto;    
+  }
+  .oequip__item {
+    .item-img__w {
+      height: 180px;
+      img {
+        max-height: calc(100% - 40px);
+      }
+    }
+  } 
 }//991
 
 @media (max-width : 767px) {
@@ -324,6 +355,87 @@
   .deliv__name {
     min-height: unset;
   }
+  .ptabs__row {
+   display: flex;   
+   flex-direction: column; 
+ }
+ .ptabs__row {
+  padding-top: 20px;
+}
+.ptabs__list {  
+  gap: 15px;
+  li {
+    font-size: 16px;
+    padding: 18px 30px;
+  }
+}
+.s-ptabs {
+  padding-top: 0;
+}
+.ptabs__item {
+  .item-img__w {
+    height: 245px;
+  }
+  .item__body {
+    padding: 10px 20px 20px 20px;
+  }
+} 
+.ptabs__lbl {
+  font-size: 12px;
+  height: 28px;
+}
+.ptabs__title {
+  font-size: 20px;
+}
+.ptabs__txt {
+  font-size: 14px;
+}
+.ptabs__row {    
+  gap: 20px;
+}
+.oprod__row {
+
+}
+.s-oprod {
+  padding: 30px 0;
+  .h2__w {  
+    flex-wrap: wrap;
+    .h2 {
+      width: 100%;
+    }
+  }
+}
+.oequip__item {
+  padding: 10px;
+}
+.oequip__item .item__body {
+  padding: 10px;
+  padding-top: 15px;
+}
+.oequip__item .item__body a {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.oequip__item .item__body p {
+  font-size: 13px;
+}
+.oequip__item .item__body {
+  ul {
+    li {
+      font-size: 12px;
+      padding: 8px;
+      padding-left: 19px;
+      &:before {
+        width: 8px;
+        height: 8px;
+        left: 6px;
+      }  
+    }
+  }
+}
+.oequip__row {    
+  gap: 10px;
+}
 
 }//767
 
@@ -779,10 +891,111 @@
 .imp__w {
   border-radius: 30px;
 }
+.banner-img__w {
+  border-radius: 30px;
+}
+.banner-img__w2 {    
+  border-radius: 30px;
+}
+.h2__w {
+  gap: 10px;
+}
+.oprod__item {    
+  flex-direction: column;
+}
+.oprod__img {
+  width: 100%;
+  height: 130px;
+}
+.h2__w {
+  margin-bottom: 20px;
+}
+.oprod__row {
+  gap: 10px;
+}
+.oprod__item {
+  padding: 5px;
+}
+.oprod__body {
+  padding: 5px 5px 5px 5px;
+}
+.oprod__title {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+.oprod__text {
+  font-size: 13px;
+}
+.cat__lbl {
+  height: 30px;
+  padding: 0 8px;
+  font-size: 14px;
+  text-transform: none;
+}
+.oprod__ul {  
+  gap: 5px;
+  margin-top: 5px;
+  li {
+    a {
+      padding: 0 12px;
+      font-size: 13px;
+      height: 29px;
+    }
+  }
+}
+.s-oequip {
+  .cpadding {
+    padding-right: 0;
+  }
+}
+.oequip__scroll {
+  padding-bottom: 20px;
+  width: 100%;
+  overflow-x: auto;
+  padding-right: 15px;
+  &::-webkit-scrollbar {
+    width: 16px;       
+    border-radius: 8px;        /* ширина scrollbar */
+  }
+  &::-webkit-scrollbar-track {
+    background: #fff;        /* цвет дорожки */
+    border-radius: 8px;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $r;    /* цвет плашки */
+    border-radius: 8px;       /* закругления плашки */
+    border: 4px solid #fff;  /* padding вокруг плашки */
+  }
+}
+
+.oequip__row {
+  display: flex;  
+  flex-wrap: nowrap;
+  width: max-content;
+  margin-right: -15px;
+}    
+.oequip__item {
+  width: 240px;  
+  flex: none;
+}
 }//640
 
 @media (max-width : 575px) {
-
+  .padvants__row {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .padvants__item {
+    padding: 30px 20px;
+    min-height: 180px;
+  }
+  .padvants__item p {
+    font-size: 58px;
+  }
+  .padvants__item span {
+    font-size: 16px;
+  }
 }//575
 
 @media (max-width : 480px) {
@@ -796,9 +1009,7 @@
   .s-adv-comp {
     padding-bottom: 120px;
   }
-  .banner-img__w2 {    
-    border-radius: 0;
-  }
+  
 }//480
 
 @media (max-width : 375px) {

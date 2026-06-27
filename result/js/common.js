@@ -121,6 +121,45 @@ jQuery(document).ready(function( $ ) {
     });
   }
 
+
+
+  function tabs(element) {    
+    $(element).find('.tabs__list-item').click(function () {
+      $(element).find('.tabs__list-item').removeClass('active');
+      $(this).addClass('active');    
+      let num = $(this).index();
+      $(element).find('.tabs__content-list-item').removeClass('active');
+      $(element).find('.tabs__content-list-item').eq(num).addClass('active');  
+    });
+  }
+
+  tabs('.ppscard-main__tabs');
+
+
+  $(function () {
+
+    $('.ptabs__list li').on('click', function () {
+
+      let index = $(this).index();
+
+      $(this)
+      .addClass('active')
+      .siblings()
+      .removeClass('active');
+
+      if (index === 0) {
+        $('.ptabs__item').stop(true, true).fadeIn(200);
+        return;
+      }
+
+      $('.ptabs__item').stop(true, true).hide();
+      $('.ptabs__item[data-cat="' + index + '"]').fadeIn(400);
+
+    });
+
+  });
+
+
   $('.accordion-header').toggleClass('inactive-header');
   $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
   $('.accordion-content').first().slideDown().toggleClass('open-content');

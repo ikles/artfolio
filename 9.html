@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>9. Продукция</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Продукция</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <section class="s-banner section">
+        <div class="banner__bg">
+          <div class="contain">
+            <div class="banner__content">              
+              <h2 class="h2 _wh">Наша продукция</h2>
+              <p>Полный спектр рекламно-производственных решений: от наружной рекламы до  сувенирной продукции. Изготавливаем на собственном производстве в Твери.</p>
+            </div>
+          </div>
+          <div class="banner-img__w banner-img__w--portf">
+            <picture>
+              <source srcset="./img/oprod.jpg" type="image/jpeg" media="(min-width:641px)" /> <!--меньше этого будет другая-->
+              <source srcset="./img/oprod-mob.jpg" type="image/jpeg" media="(min-width:200px)" /> <!--больше этого будет эта-->              
+              <img src="./img/oprod.jpg" alt="">
+            </picture>
+          </div>
+        </div>        
+      </section>
+      
+
+      <section class="s-oprod section">
+        <div class="contain">
+          <div class="h2__w">
+            <div class="h2">Наружная реклама</div>
+            @@include('var/_lbl.html',{              
+              "txt":"15 подразделов"
+            })
+          </div>
+          <div class="oprod__row">
+            @@include('var/_oprod__item.html',{
+              "img":"./img/oprod-1.png",
+              "title":"Световые<br> короба",
+              "txt":"лайтбоксы, панели"
+            })
+            @@include('var/_oprod__item.html',{
+              "img":"./img/oprod-2.png",
+              "title":"Панель-кронштейн",
+              "txt":"фасадные конструкции"
+            })
+            @@include('var/_oprod__item.html',{
+              "img":"./img/oprod-3.png",
+              "title":"Объемные буквы",
+              "txt":"с подсветкой/без"
+            })
+          </div>
+        </div>
+      </section>
+      <section class="s-oprod section">
+        <div class="contain">
+          <div class="h2__w">
+            <div class="h2">Широкоформатная печать</div>
+            @@include('var/_lbl.html',{              
+              "txt":"9 подразделов"
+            })
+          </div>
+          <div class="oprod__row">
+            @@include('var/_oprod__item.html',{
+              "img":"./img/oprod-2-1.png",
+              "title":"Печать на баннере",
+              "txt":"баннерная ткань, сетка "
+            })            
+          </div>
+        </div>
+      </section>
+
+      <section class="s-oprod section">
+        <div class="contain">
+          <div class="h2__w">
+            <div class="h2">Полиграфия</div>
+            @@include('var/_lbl.html',{              
+              "txt":"9 подразделов"
+            })
+          </div>
+          <div class="oprod__row">
+            @@include('var/_oprod__item.html',{
+              "img":"./img/oprod-3-1.png",
+              "title":"Плакаты и афиши",
+              "txt":"форматы А2, А1, А0"
+            })            
+          </div>
+        </div>
+      </section>
+
+      <section class="s-oprod section">
+        <div class="contain">
+          <div class="h2__w">
+            <div class="h2">Сувенирная продукция</div>
+            @@include('var/_lbl.html',{              
+              "txt":"6 подразделов"
+            })
+          </div>
+          <div class="oprod__row-100">
+
+
+            <div class="oprod__item">
+              <a href="" class="oprod__img">
+                <img src="./img/oprod-4-1.png" alt="">
+              </a>
+              <span class="oprod__body">
+                <a href="" class="oprod__title">Брендированные сувениры</a>
+                <ul class="oprod__ul">
+                  <li><a href="">Ручки</a></li>
+                  <li><a href="">Кружки</a></li>
+                  <li><a href="">Футболки</a></li>
+                  <li><a href="">Брелки</a></li>
+                  <li><a href="">Пакеты</a></li>
+                  <li><a href="">Магниты</a></li>
+                  <li><a href="">Блокноты</a></li>
+                  <li><a href="">Флешки</a></li>
+                  <li><a href="">Зонты</a></li>
+                </ul>
+              </span>
+            </div>
+
+
+
+
+            
+          </div>
+        </div>
+      </section>
+
+      <section class="s-need section">
+        <div class="contain">
+          <div class="need__w _stat">
+            <div class="h2 _wh _tac _nob">Нужна консультация?</div>
+            <p class="need__txt">Поможем подобрать решение под вашу задачу</p>
+            <div class="need__btn-w">
+              <div class="btn__shadow-wrap">
+                <a href="" class="btn">Связаться с нами</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+

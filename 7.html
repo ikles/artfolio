@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>7. Наше оборудование</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Наше оборудование</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <section class="s-oequip section">
+        <div class="contain">
+          <div class="h2">Наше оборудование</div>
+        </div>
+        <div class="cpadding">          
+          <div class="oequip__scroll">
+          <div class="oequip__row">
+            @@include('var/_oequip__item.html',{
+              "img":"./img/oequip-1.png",
+              "title":"Полноцветный листовой офсет Ryobi формат B3",
+              "txt":"Печатная машина позволяет работать с различными типами бумаги, от тонкой глянцевой бумаги толщиной 0,04 мм до картона толщиной 0,6 мм, а также  оборудована полностью автоматическим перенастраиваемым устройством  двусторонней печати.",
+              "list":""
+            })
+            @@include('var/_oequip__item.html',{
+              "img":"./img/oequip-2.png",
+              "title":"Интерьерный плоттер Mimaki JV150-160",
+              "txt":"Печатная машина позволяет работать с различными типами бумаги, от тонкой глянцевой бумаги толщиной 0,04 мм до картона толщиной 0,6 мм, а также  оборудована полностью автоматическим перенастраиваемым устройством  двусторонней печати.",
+              "list":"<ul><li>Скорость печати до 56,2 м²/час</li><li>Стабильное качество при непрерывной работе</li><li>Скорость печати до 56,2 м²/час</li></ul>"
+            })
+            @@include('var/_oequip__item.html',{
+              "img":"./img/oequip-3.png",
+              "title":"Интерьерный плоттер Mimaki JV33-160",
+              "txt":"Плоттеры JV33 показывают существенно более высокую скорость печати,  соответственно при сопоставимой скорости — более высокое качество.  Отсутствие низких разрешений и более мелкая капля позволяют печатать с  очень высокой степенью детализации.",
+              "list":"<ul><li>Высокая детализация печати</li><li>Четкое отображение текста до 4 пунктов</li><li>Высокая скорость печати</li></ul>"
+            })
+          </div>
+          </div>
+        </div>      
+      </section>
+
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
