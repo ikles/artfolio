@@ -72,6 +72,12 @@
   .padvants__item p {
     font-size: 42px;
   }
+  .howwork__item p {
+    font-size: 18px;
+  }
+  .why-prof {    
+    grid-template-columns: repeat(2, 1fr);
+  }
 }//1439
 
 
@@ -174,11 +180,17 @@
     display: flex;    
     flex-direction: column;
   }
+
   .padvants__row {    
     grid-template-columns: repeat(2, 1fr);
   }
   .oprod__row {    
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .howwork__row {    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
   }
 }//1199
 
@@ -437,6 +449,27 @@
   gap: 10px;
 }
 
+.sserv__row {
+  display: flex;  
+  flex-direction: column;
+  gap: 20px;
+}
+.why-prof {
+  display: flex;    
+  flex-direction: column;
+  gap: 20px;
+}
+.comp-prof__img {
+ img {
+   max-height: calc(100% - 30px);
+ } 
+}
+.howwork:before {
+  background: url(../img/howwork-bg-mob.jpg) no-repeat center;
+  -webkit-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
 }//767
 
 @media (max-width : 640px) {
@@ -995,6 +1028,59 @@
   }
   .padvants__item span {
     font-size: 16px;
+  }
+  .howwork {
+    padding: 60px 10px;    
+    border-radius: 30px;
+  }
+  .howwork__item span {
+    font-size: 13px;
+  }
+  .howwork__item {
+    padding: 20px 10px;
+  }
+  .howwork__item i {
+    margin-bottom: 10px;
+  }
+  .sserv__img-w {
+    height: 280px;
+    img {
+      max-height: calc(100% - 50px)
+      
+    }
+  }
+  .sserv__body {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+  .sserv__title {
+    font-size: 20px;
+  }
+  .sserv__lbl {
+    font-size: 12px;
+    height: 28px;
+    margin-bottom: 10px;
+  }
+  .sserv__body p {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .sserv__body ul {
+    margin-bottom: 10px;
+    li {
+      font-size: 13px;
+      padding-left: 35px;
+      background-position:  left 10px center;
+      background-size: 15px;
+    }
+  }
+  .sserv__btn {
+    width: 100%;
+  }
+  .sserv__item {
+    padding: 10px;
+    padding-bottom: 24px;
   }
 }//575
 

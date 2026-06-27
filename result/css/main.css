@@ -795,6 +795,20 @@ body {
     width: 212px;
     height: 6px;
     background: linear-gradient(90deg, #ec930f 0%, #dc2022 100%); }
+  .h2 + .subtitle {
+    margin-top: -10px; }
+
+.subtitle {
+  font-family: var(--second-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: -0.02em;
+  color: var(--txt);
+  margin-bottom: 40px; }
+  @media (max-width: 640px) {
+    .subtitle {
+      margin-bottom: 20px; } }
 
 .what__h-txt {
   font-weight: 500;
@@ -1381,8 +1395,9 @@ footer {
     color: white; }
     .banner__content p:last-child {
       margin-bottom: 0; }
-  .banner__content._w50 {
-    width: 50%; }
+  @media (min-width: 992px) {
+    .banner__content._w50 {
+      width: 50%; } }
   .banner__content .h2 {
     margin-bottom: 20px; }
     @media (min-width: 641px) {
@@ -2448,7 +2463,9 @@ textarea {
 .sserv__item {
   background: white;
   border-radius: 20px;
-  padding: 20px 20px 40px; }
+  padding: 20px 20px 40px;
+  display: flex;
+  flex-direction: column; }
 
 .sserv__img-w {
   display: flex;
@@ -2469,7 +2486,8 @@ textarea {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start; }
+  justify-content: flex-start;
+  flex-grow: 1; }
   .sserv__body p {
     font-weight: 500;
     font-size: 16px;
@@ -2480,7 +2498,8 @@ textarea {
   .sserv__body ul {
     display: flex;
     width: 100%;
-    flex-direction: column; }
+    flex-direction: column;
+    margin-bottom: 30px; }
     .sserv__body ul li {
       display: flex;
       font-weight: 600;
@@ -2489,8 +2508,7 @@ textarea {
       color: #181516;
       border-radius: 10px;
       padding: 14px 20px 14px 45px;
-      width: 628px;
-      height: 43px;
+      min-height: 43px;
       background-image: url("../img/check-li.svg");
       background-repeat: no-repeat;
       background-position: left 20px center; }
@@ -2526,7 +2544,82 @@ textarea {
 
 .sserv__btn {
   padding: 0px 77px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  margin-top: auto; }
+
+.howwork {
+  border-radius: 50px;
+  padding: 80px 60px 90px 60px;
+  position: relative;
+  overflow: hidden;
+  background-color: var(--txt); }
+  .howwork > * {
+    position: relative; }
+  .howwork:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("../img/howwork-bg.jpg") no-repeat center;
+    opacity: 0.8;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; }
+  .howwork .h2 {
+    margin-bottom: 10px; }
+
+.howwork__row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px; }
+
+.howwork__item {
+  min-height: 224px;
+  padding: 30px 20px;
+  background: var(--txt);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .howwork__item i {
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    border-radius: 20px;
+    width: 60px;
+    height: 60px;
+    background-color: #dc2022;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 20px; }
+  .howwork__item p {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px; }
+  .howwork__item span {
+    font-family: var(--second-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8); }
 
 @media only screen and (max-width: 1439px) {
   .mn__ul {
@@ -2576,7 +2669,11 @@ textarea {
   .products__row {
     grid-template-columns: repeat(3, 1fr); }
   .padvants__item p {
-    font-size: 42px; } }
+    font-size: 42px; }
+  .howwork__item p {
+    font-size: 18px; }
+  .why-prof {
+    grid-template-columns: repeat(2, 1fr); } }
 
 @media (max-width: 1199px) {
   .top__r {
@@ -2647,7 +2744,10 @@ textarea {
   .padvants__row {
     grid-template-columns: repeat(2, 1fr); }
   .oprod__row {
-    grid-template-columns: repeat(2, 1fr); } }
+    grid-template-columns: repeat(2, 1fr); }
+  .howwork__row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; } }
 
 @media (max-width: 991px) {
   .portf {
@@ -2816,7 +2916,22 @@ textarea {
       height: 8px;
       left: 6px; }
   .oequip__row {
-    gap: 10px; } }
+    gap: 10px; }
+  .sserv__row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .why-prof {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; }
+  .comp-prof__img img {
+    max-height: calc(100% - 30px); }
+  .howwork:before {
+    background: url(../img/howwork-bg-mob.jpg) no-repeat center;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; } }
 
 @media (max-width: 640px) {
   .foot__call__w,
@@ -3218,7 +3333,45 @@ textarea {
   .padvants__item p {
     font-size: 58px; }
   .padvants__item span {
-    font-size: 16px; } }
+    font-size: 16px; }
+  .howwork {
+    padding: 60px 10px;
+    border-radius: 30px; }
+  .howwork__item span {
+    font-size: 13px; }
+  .howwork__item {
+    padding: 20px 10px; }
+  .howwork__item i {
+    margin-bottom: 10px; }
+  .sserv__img-w {
+    height: 280px; }
+    .sserv__img-w img {
+      max-height: calc(100% - 50px); }
+  .sserv__body {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 0; }
+  .sserv__title {
+    font-size: 20px; }
+  .sserv__lbl {
+    font-size: 12px;
+    height: 28px;
+    margin-bottom: 10px; }
+  .sserv__body p {
+    font-size: 14px;
+    margin-bottom: 10px; }
+  .sserv__body ul {
+    margin-bottom: 10px; }
+    .sserv__body ul li {
+      font-size: 13px;
+      padding-left: 35px;
+      background-position: left 10px center;
+      background-size: 15px; }
+  .sserv__btn {
+    width: 100%; }
+  .sserv__item {
+    padding: 10px;
+    padding-bottom: 24px; } }
 
 @media (max-width: 480px) {
   .adv-comp__video {
