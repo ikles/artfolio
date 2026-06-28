@@ -133,7 +133,7 @@ jQuery(document).ready(function( $ ) {
     });
   }
 
-  tabs('.ppscard-main__tabs');
+  tabs('.boxes__tabs');
 
 
   $(function () {
