@@ -22,8 +22,6 @@ jQuery(document).ready(function( $ ) {
   });
 
 
-
-
   function reviewsSlider() {
     if ($(window).width() <= 640) {
       if (!$('.zon__row').hasClass('slick-initialized')) {
@@ -89,8 +87,7 @@ jQuery(document).ready(function( $ ) {
     
   }
 
-  popup('.link2', '.modal-overlay_2', '.modal-close_2');
-  popup('.link', '.modal-overlay_1', '.modal-close_1');
+  popup('.modal1', '.modal-overlay_1', '.modal-close_1');
 
 
   $('a[href*=\\#]:not([href=\\#])').click(function () {
@@ -99,6 +96,28 @@ jQuery(document).ready(function( $ ) {
     $("html:not(:animated),body:not(:animated)").animate({scrollTop: destination - 85}, 1100);
     return false;
   });
+
+
+  function showHide(elem) {
+    let block = $(elem);    
+    var button = block.find('.toggle');
+    button.html(button.data('text'));
+    button.click(function(e){
+      e.preventDefault();      
+      let desc = $(this).prev();      
+      desc.toggleClass('more');
+      var swap = $(this).data('swap');
+      var text = $(this).data('text');
+      $(this).data('text', swap);
+      $(this).data('swap', text);
+      $(this).html(swap);
+      button.toggleClass('open');
+    });
+  }
+
+  showHide('.description');
+
+
 
 
   $(window).scroll(function(){

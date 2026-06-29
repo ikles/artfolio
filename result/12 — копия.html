@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>12. Фрезерная резка на ЧПУ</title>  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=PT+Sans:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/select2.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    <div href="" class="top">
+  <div href="" class="contain">
+
+    <div href="" class="top__row">
+      <div href="" class="head__logo-w">
+        <a href="./index.html" class="logo"><img src="./img/logo-head.png" alt=""></a>
+        <div href="" class="head__logo-border"></div>
+      </div>
+      <div href="" class="top__r header__col cpadding">
+        <div href="" class="top__cont-w">
+          <a href="" class="top-btn-o" data-da=",.header__col,1199,10">Обсудить проект</a>
+          <div href="" class="head__conts">
+            <a href="mailto:zakaz@rpk69.ru" class="head__cont-mail">zakaz@rpk69.ru</a>
+            <div href="" class="call__w">
+              <a href="tel:+7 (4822) 647-007" class="call">+7 (4822) 647-007</a>
+              <a href="tel:+7 (904) 351-01-51" class="call">+7 (904) 351-01-51</a>
+            </div>
+          </div>
+        </div>
+        <ul href="" class="mn__ul">
+          <li><a href="" class="act">Продукция</a></li>
+          <li><a href="" >Услуги</a></li>
+          <li><a href="" >Портфолио</a></li>
+          <li><a href="" >Производство</a></li>
+          <li><a href="" >Компания</a></li>
+          <li><a href="" >Контакты</a></li>
+        </ul>
+      </div>
+      <div class="burger-w">
+        <span class="burger"></span>
+      </div>
+      <div class="top__row-mobile-line"></div>
+    </div>
+  </div>
+</div>    
+    <main class="main">
+      <div class="bread">
+        <div class="contain">
+          <ul>
+            <li><a href="">Главная</a></li>
+            <li>Услуги</li>
+          </ul>
+        </div>
+      </div><!--bread-->
+
+      <div class="portf _inverse _pt50">
+        <div class="contain">
+          <div class="portf__row _bgwh">
+            <div class="portf__cont">
+              <div class="portf__lbl">Высокоточная обработка</div>
+              <div class="portf__title _low">Фрезерная резка на ЧПУ</div>
+              <p class="portf__txt">Профессиональная фрезерная обработка материалов на современном  оборудовании с числовым программным управлением. Создаем сложные  фигурные элементы любой геометрии с высочайшей точностью до 0.1 мм.</p>              
+              
+              <div class="servv__advant">
+                <div class="servv__advant-item">
+                  <p>0.1 мм</p>
+                  <span>Точность <br> обработки</span>
+                </div>
+                <div class="servv__advant-item">
+                  <p>2000×<wbr>3000 мм</p>
+                  <span>Макс. размер листа</span>
+                </div>
+                <div class="servv__advant-item">
+                  <p>24/7</p>
+                  <span>Производство</span>
+                </div>
+              </div>
+            </div>
+            <div class="portf__r" data-da=".portf__row,.portf__cont,640,2">
+              <img src="img/frez.jpg">
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="s-product section">
+        <div class="contain">
+          <div class="tabs boxes__tabs">
+            <ul class="boxes__inf-btn-w tabs__list">
+              <li class="tabs__list-item boxes__inf-tab active">Описание</li>
+              <li class="tabs__list-item boxes__inf-tab">Материалы</li>              
+              <li class="tabs__list-item boxes__inf-tab">Технические характеристики</li>
+              <li class="tabs__list-item boxes__inf-tab">Применение</li>              
+            </ul>
+            <ul class="tabs__content-list"> 
+              <li class="tabs__content-list-item active">
+                <div class="product__inf-txt">Фрезерная резка на ЧПУ — это современный высокоточный метод обработки  листовых материалов. Наше оборудование позволяет создавать детали любой  сложности: от простых геометрических форм до сложных фигурных элементов с мелкими деталями.</div>
+                <div class="comp-prof _inv">
+                  <div class="comp-prof__item">
+                    <div class="comp-prof__img"><img src="img/product-1.png"></div>
+                    <div class="comp-prof__title">Высокая точность</div>
+                    <p class="comp-prof__txt">Точность обработки до 0.1 мм позволяет создавать детали с идеальным совпадением размеров и сложными соединениями.</p>
+                  </div>
+                  <div class="comp-prof__item">
+                    <div class="comp-prof__img"><img src="img/product-2.png"></div>
+                    <div class="comp-prof__title">Быстрое производство</div>
+                    <p class="comp-prof__txt">Автоматизированный процесс позволяет изготавливать большие партии за короткое время без потери качества.</p>
+                  </div>
+                  <div class="comp-prof__item">
+                    <div class="comp-prof__img"><img src="img/product-3.png"></div>
+                    <div class="comp-prof__title">Любая сложность</div>
+                    <p class="comp-prof__txt">Создаем детали любой геометрической сложности, включая внутренние вырезы, пазы, шипы и фигурные кромки.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="tabs__content-list-item">
+                <div class="product__inf-txt">Мы работаем с широким спектром материалов. Наши станки позволяют  обрабатывать как мягкие, так и твердые материалы с высокой точностью.</div>
+
+
+                <div class="matterial__w">
+                  <div class="advant__item">
+                    <div class="advant__img"><img src="img/matterial1.svg"></div>
+                    <div class="advant__name-w">
+                      <div class="advant__name">Древесина</div>
+                      <div class="advant__txt">Массив, фанера, МДФ, шпон</div>
+                    </div>
+                  </div>
+                  <div class="advant__item">
+                    <div class="advant__img"><img src="img/matterial2.svg"></div>
+                    <div class="advant__name-w">
+                      <div class="advant__name">Пластики</div>
+                      <div class="advant__txt">Акрил, ПВХ, поликарбонат, АБС-пластик</div>
+                    </div>
+                  </div>
+                  <div class="advant__item">
+                    <div class="advant__img"><img src="img/matterial3.svg"></div>
+                    <div class="advant__name-w">
+                      <div class="advant__name">Металлы</div>
+                      <div class="advant__txt">Алюминий, латунь, медь, сталь до 10 мм</div>
+                    </div>
+                  </div>
+                  <div class="advant__item">
+                    <div class="advant__img"><img src="img/matterial4.svg"></div>
+                    <div class="advant__name-w">
+                      <div class="advant__name">Композиты</div>
+                      <div class="advant__txt">Алюкобонд, Дибонд, композитные панели</div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </li>
+              <li class="tabs__content-list-item">
+                <table class="prod-table">
+                  <tr>
+                    <td>Максимальный размер заготовки</td>
+                    <td>2000 × 3000 мм</td>
+                  </tr>
+                  <tr>
+                    <td>Точность обработки</td>
+                    <td>±0.1 мм</td>
+                  </tr>
+                  <tr>
+                    <td>Максимальная толщина материала</td>
+                    <td>До 200 мм (в зависимости от материала)</td>
+                  </tr>
+                  <tr>
+                    <td>Скорость резания</td>
+                    <td>До 15000 мм/мин</td>
+                  </tr>
+                  <tr>
+                    <td>Форматы файлов</td>
+                    <td>DXF, DWG, AI, CDR, PDF, PLT</td>
+                  </tr>
+                  <tr>
+                    <td>Срок изготовления</td>
+                    <td>От 1 дня</td>
+                  </tr>                  
+                </table>
+              </li>
+              <li class="tabs__content-list-item">
+                <div class="product__inf-txt">Фрезерная резка широко применяется в различных сферах производства и рекламы. Мы создаем детали для:</div>
+
+                <div class="prod__w">
+                  <a href="" class="prod__item">
+                    <div class="prod__img prod__img--min"><img src="img/prod-1.png"></div>
+                    <div class="prod__txt-w">
+                      <div class="prod__title">Наружная реклама</div>
+                      <div class="prod__txt">Объемные буквы, логотипы, вывески, таблички</div>
+                    </div>
+                  </a>
+                  <a href="" class="prod__item">
+                    <div class="prod__img prod__img--min"><img src="img/prod-2.png"></div>
+                    <div class="prod__txt-w">
+                      <div class="prod__title">Интерьер и мебель</div>
+                      <div class="prod__txt">Декоративные панели, мебельные фасады, перегородки</div>
+                    </div>
+                  </a>
+                  <a href="" class="prod__item">
+                    <div class="prod__img"><img src="img/prod-3.png"></div>
+                    <div class="prod__txt-w">
+                      <div class="prod__title">Сувенирная продукция</div>
+                      <div class="prod__txt">Подарки, награды, брендированные изделия</div>
+                    </div>
+                  </a>
+                  <a href="" class="prod__item">
+                    <div class="prod__img"><img src="img/prod-4.png"></div>
+                    <div class="prod__txt-w">
+                      <div class="prod__title">Промышленность</div>
+                      <div class="prod__txt">Детали для оборудования, прототипирование</div>
+                    </div>
+                  </a>
+                  <a href="" class="prod__item">
+                    <div class="prod__img"><img src="img/prod-5.png"></div>
+                    <div class="prod__txt-w">
+                      <div class="prod__title">Макетирование</div>
+                      <div class="prod__txt">Архитектурные макеты, стендовые модели</div>
+                    </div>
+                  </a>
+                  <a href="" class="prod__item">
+                    <div class="prod__img"><img src="img/prod-6.png"></div>
+                    <div class="prod__txt-w">
+                      <div class="prod__title">Оформление выставок</div>
+                      <div class="prod__txt">Стенды, стойки, конструкции для экспозиций</div>
+                    </div>
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="s-oportf section">
+          <div class="contain">
+            <div class="h2">Примеры наших работ</div>
+            <div class="ptabs__row">                  
+              <div class="ptabs__item ptabs__item-2 item _nopadd" data-cat="1">
+  <a data-fancybox href="./img/oportf1.png" class="item-img__w _norad">
+    <img src="./img/oportf1.png" alt="">
+  </a>
+  <div class="item__body">    
+    <a href="" class="ptabs__title">Объемные буквы из акрила</a>
+    <div class="ptabs__txt">Фрезерная резка акрила 10 мм для световых букв</div>
+  </div>
+</div>
+              <div class="ptabs__item ptabs__item-2 item _nopadd" data-cat="1">
+  <a data-fancybox href="./img/oportf2.png" class="item-img__w _norad">
+    <img src="./img/oportf2.png" alt="">
+  </a>
+  <div class="item__body">    
+    <a href="" class="ptabs__title">Декоративная панель из фанеры</a>
+    <div class="ptabs__txt">Сложный геометрический узор, фрезеровка 8 мм</div>
+  </div>
+</div>
+              <div class="ptabs__item ptabs__item-2 item _nopadd" data-cat="1">
+  <a data-fancybox href="./img/oportf3.png" class="item-img__w _norad">
+    <img src="./img/oportf3.png" alt="">
+  </a>
+  <div class="item__body">    
+    <a href="" class="ptabs__title">Логотип из алюминия</a>
+    <div class="ptabs__txt">Резка металла 3 мм с последующей полировкой</div>
+  </div>
+</div>
+              <div class="ptabs__item ptabs__item-2 item _nopadd" data-cat="1">
+  <a data-fancybox href="./img/oportf4.png" class="item-img__w _norad">
+    <img src="./img/oportf4.png" alt="">
+  </a>
+  <div class="item__body">    
+    <a href="" class="ptabs__title">Пазловые конструкции</a>
+    <div class="ptabs__txt">Соединительные элементы для выставочных стендов</div>
+  </div>
+</div>
+              <div class="ptabs__item ptabs__item-2 item _nopadd" data-cat="1">
+  <a data-fancybox href="./img/oportf5.png" class="item-img__w _norad">
+    <img src="./img/oportf5.png" alt="">
+  </a>
+  <div class="item__body">    
+    <a href="" class="ptabs__title">Подарочные коробки</a>
+    <div class="ptabs__txt">Резка и гравировка на дереве премиум-класса</div>
+  </div>
+</div>
+              <div class="ptabs__item ptabs__item-2 item _nopadd" data-cat="1">
+  <a data-fancybox href="./img/oportf6.png" class="item-img__w _norad">
+    <img src="./img/oportf6.png" alt="">
+  </a>
+  <div class="item__body">    
+    <a href="" class="ptabs__title">Таблички на офис</a>
+    <div class="ptabs__txt">Композитный материал, резка по контуру, гравировка</div>
+  </div>
+</div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <div class="contain">
+            <div class="comp-prof _inv">
+              <div class="comp-prof__item">
+                <div class="comp-prof__img"><img src="img/addv-1.png"></div>
+                <div class="comp-prof__title">Собственное производство</div>
+                <p class="comp-prof__txt">Современный парк фрезерных станков с ЧПУ. Полный контроль качества на всех этапах.</p>
+              </div>
+              <div class="comp-prof__item">
+                <div class="comp-prof__img"><img src="img/addv-2.png"></div>
+                <div class="comp-prof__title">Подготовка макетов</div>
+                <p class="comp-prof__txt">Поможем подготовить файлы для резки, оптимизируем раскрой для экономии материала.</p>
+              </div>
+              <div class="comp-prof__item">
+                <div class="comp-prof__img"><img src="img/addv-3.png"></div>
+                <div class="comp-prof__title">Доставка по Твери</div>
+                <p class="comp-prof__txt">Оперативная доставка готовых изделий по городу и области. Самовывоз со склада.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="s-need section">
+          <div class="contain">
+            <div class="need__w">
+              <div class="h2 _wh _tac _nob">Рассчитайте стоимость фрезерной резки</div>
+              <p class="need__txt">Пришлите чертеж или макет — мы подготовим расчет за 30 минут</p>
+              <form class="need__form">
+  <input type="text" placeholder="Ваше имя">
+  <input type="text" placeholder="+7 ()">
+  <button class="need__btn btn">отправить</button>
+</form>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">  
+  <div class="contain">    
+    <div class="foot__w">
+      <div class="foot__l">
+        <a href="./index.html" class="f-logo">
+          <img src="./img/logo-foot.png">
+        </a>
+        <span class="f-logo__slogan">© 2026 Артфолио — рекламно-производственная компания</span>
+      </div>
+      <div
+      class="head__row">
+      <div class="foot__conts">          
+        <a href="mailto:zakaz@rpk69.ru" class="head__cont-mail">zakaz@rpk69.ru</a>
+        <div class="foot__call__w">
+          <a href="tel:+7 (4822) 647-007" class="call">+7 (4822) 647-007</a>
+          <a href="tel:+7 (904) 351-01-51" class="call">+7 (904) 351-01-51</a>
+        </div>
+      </div>
+      <ul class="foot__mn__ul">
+        <li><a href="" class="act">Продукция</a></li>
+        <li><a href="">Услуги</a></li>
+        <li><a href="">Портфолио</a></li>
+        <li><a href="">Производство</a></li>
+        <li><a href="">Компания</a></li>
+        <li><a href="">Контакты</a></li>
+      </ul>
+    </div>
+  </div>  
+</div>
+</footer>    
+    </div>
+<!--wrapper-->
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/slick.js"></script>
+<script src="js/select2.min.js"></script>
+<script src="js/jquery.fancybox.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/dynamic_adapt.js"></script>
+</body>
+</html>
+
