@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">  
+  <!--meta name="viewport" content="width=1200px"-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />            
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>1. Главная</title>  
+  @@include('var/_styless.html')
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+<body>
+
+  <div class="wrapper">
+    @@include('var/_header.html')    
+    <main class="main">
+      <div class="portf" style="background-image: url('../img/portf-bg.jpg');">
+        <div class="contain">
+          <div class="portf__row">
+            <div class="portf__cont">
+              <div class="portf__title">Наружная реклама в Твери с собственным производством</div>
+              <p class="portf__txt">Разработаем, изготовим и смонтируем вывески, световые короба, полиграфию. Работаем с 2006 года.</p>
+              <a href="" class="portf__btn btn">Портфолио</a>
+              <div class="portf__advant">
+                <div class="portf__advant-item">
+                  <div class="portf__advant-img"><img src="./img/portf-1.svg"></div>                
+                  <div class="portf__advant-txt">350 +<br> проектов                  
+                  </div>
+                </div>
+                <div class="portf__advant-item">
+                  <div class="portf__advant-img"><img src="./img/portf-2.svg"></div>                
+                  <div class="portf__advant-txt">Гарантия<br> 3 года</div>                
+                </div>
+                <div class="portf__advant-item">
+                  <div class="portf__advant-img"><img src="./img/portf-3.svg"></div>                
+                  <div class="portf__advant-txt">Своё<br> производство</div>                
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </main>
+    @@include('var/_footer.html')    
+  </div>
+<!--wrapper-->
+
+@@include('var/_scripts.html')
+</body>
+</html>
+
