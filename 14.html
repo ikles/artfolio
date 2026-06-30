@@ -19,7 +19,22 @@
   <div class="wrapper">
     @@include('var/_header.html')    
     <main class="main">
-      <div class="portf" style="background-image: url('./img/portf-bg.jpg');">
+      <div class="portf _video">
+
+
+
+        <!-- Фоновое видео для десктопа -->
+        <video class="video-desktop"
+        autoplay muted loop playsinline webkit-playsinline>
+        <source src="./video/Video_Main.mp4" type="video/mp4">
+        </video>
+        <!-- Картинка-заглушка (под видео) -->
+        <picture class="video__picture">
+          <source srcset="./img/portf-bg.jpg" type="image/jpeg" media="(min-width:720px)"/>
+          <source srcset="./img/portf-bg.jpg" type="image/jpeg" media="(min-width:200px)"/>
+          <img src="./img/portf-bg.jpg" alt="">
+        </picture>
+
         <div class="contain">
           <div class="portf__row">
             <div class="portf__cont">
@@ -45,7 +60,7 @@
           </div>
         </div>
       </div>
-    
+
     </main>
     @@include('var/_footer.html')    
   </div>

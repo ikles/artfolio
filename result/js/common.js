@@ -118,7 +118,9 @@ jQuery(document).ready(function( $ ) {
   showHide('.description');
 
 
-
+  $('.portf._video video').on('error', function() {
+    $(this).hide(); // скрываем видео при ошибке, показывается картинка-заглушка
+  });
 
   $(window).scroll(function(){
     var wt = $(window).scrollTop();  
