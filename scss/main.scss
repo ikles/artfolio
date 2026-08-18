@@ -124,12 +124,14 @@ body {
   transform: translate(-50%, 0%);
   z-index: 6;       
   min-height: 100px;
-
   border-radius: 30px;
   width: calc(100% - 30px);
   max-width: 400px;  
   padding: 66px 30px 40px 30px;
   background: var(--txt);
+  background: url("../img/modal-bg.jpg") no-repeat center;
+
+  background-size: cover;
   &:before {
     content: "";
     display: block;
@@ -164,10 +166,51 @@ body {
   text-align: center;
 }
 
+.modal__txt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #fff;
+  a {
+    text-decoration: underline;
+    color: #FFF;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .modal__btn {
   width: 100%;
   max-width: 100%;
 }
+
+.modal__btns {
+  display: flex;
+  gap: 24px;  
+  align-items: center;
+  margin-top: 31px;
+  .btn-o {
+    background: none;
+    color: #FFF;
+    border-color: #FFF;
+    @media (any-hover: hover) {
+      &:hover {
+        border-color: #dc2022;
+      }
+    }
+  }
+  .btn-o,
+  .btn {    
+    height: 60px;
+    box-shadow: none;
+    width: calc(50% - 12px);
+    padding: 0 10px;
+    min-width: unset;
+  }
+}
+
 
 .label {
   display: flex;
@@ -1465,14 +1508,14 @@ footer {
   overflow: hidden;
   padding-bottom: 130px;
   @media (max-width : 1439px) {
-  padding: 80px 0;
+    padding: 80px 0;
   }
   @media (max-width : 640px) {
-  min-height: 730px;
-  padding: 40px 0 60px 0;
-  .portf__txt + .btn {
-    margin-top: auto;
-  }
+    min-height: 730px;
+    padding: 40px 0 60px 0;
+    .portf__txt + .btn {
+      margin-top: auto;
+    }
   }
   &:before {
     content: "";
@@ -1976,15 +2019,19 @@ footer {
 
 .need__form {  
   width: 100%;
-  gap: 24px;
+  gap: 10px 24px;
   display: grid;  
-  grid-template-columns: 34.02% 34.02% 27.86%;
+  grid-template-columns: 34.02% 34.02% 27.86%;  
+  .disc__label {
+    margin-top: 0;
+  }
 }
 
 input[type="email"],
 input[type="tel"],
 input[type="password"],
 input[type="text"] {
+  border: none;
   border-radius: 20px;
   height: 58px;
   background: rgb(255, 255, 255);
@@ -2415,6 +2462,19 @@ textarea {
     flex-direction: column;
     gap: 15px;
   }
+  .disc__label {
+    margin-bottom: 10px;
+    @media (max-width : 640px) {
+    margin-bottom: 0;
+    }
+    input[type="checkbox"] + div {
+      max-width: 100%;
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  } 
   .h2 {
     margin-bottom: 10px;
   }

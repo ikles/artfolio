@@ -430,7 +430,9 @@ body {
   width: calc(100% - 30px);
   max-width: 400px;
   padding: 66px 30px 40px 30px;
-  background: var(--txt); }
+  background: var(--txt);
+  background: url("../img/modal-bg.jpg") no-repeat center;
+  background-size: cover; }
   .modal-form__block:before {
     content: "";
     display: block;
@@ -459,9 +461,41 @@ body {
   margin-bottom: 30px;
   text-align: center; }
 
+.modal__txt {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
+  color: #fff; }
+  .modal__txt a {
+    text-decoration: underline;
+    color: #FFF; }
+    .modal__txt a:hover {
+      text-decoration: none; }
+
 .modal__btn {
   width: 100%;
   max-width: 100%; }
+
+.modal__btns {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin-top: 31px; }
+  .modal__btns .btn-o {
+    background: none;
+    color: #FFF;
+    border-color: #FFF; }
+    @media (any-hover: hover) {
+      .modal__btns .btn-o:hover {
+        border-color: #dc2022; } }
+  .modal__btns .btn-o,
+  .modal__btns .btn {
+    height: 60px;
+    box-shadow: none;
+    width: calc(50% - 12px);
+    padding: 0 10px;
+    min-width: unset; }
 
 .label {
   display: flex;
@@ -1949,14 +1983,17 @@ footer {
 
 .need__form {
   width: 100%;
-  gap: 24px;
+  gap: 10px 24px;
   display: grid;
   grid-template-columns: 34.02% 34.02% 27.86%; }
+  .need__form .disc__label {
+    margin-top: 0; }
 
 input[type="email"],
 input[type="tel"],
 input[type="password"],
 input[type="text"] {
+  border: none;
   border-radius: 20px;
   height: 58px;
   background: white;
@@ -2324,6 +2361,16 @@ textarea {
     display: flex;
     flex-direction: column;
     gap: 15px; }
+  .vform .disc__label {
+    margin-bottom: 10px; }
+    @media (max-width: 640px) {
+      .vform .disc__label {
+        margin-bottom: 0; } }
+    .vform .disc__label input[type="checkbox"] + div {
+      max-width: 100%; }
+      .vform .disc__label input[type="checkbox"] + div:before {
+        top: 50%;
+        transform: translateY(-50%); }
   .vform .h2 {
     margin-bottom: 10px; }
 
@@ -3850,7 +3897,18 @@ textarea {
   .boxes__inf-tab {
     font-size: 16px;
     height: 52px;
-    padding: 0 20px; } }
+    padding: 0 20px; }
+  .need__form {
+    gap: 20px; }
+    .need__form .disc__label {
+      display: flex;
+      margin-bottom: 0;
+      align-items: center; }
+      .need__form .disc__label input[type="checkbox"] + div {
+        max-width: 100%; }
+        .need__form .disc__label input[type="checkbox"] + div:before {
+          top: 50%;
+          transform: translateY(-50%); } }
 
 @media (max-width: 640px) {
   .foot__call__w,

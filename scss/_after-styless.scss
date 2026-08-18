@@ -791,6 +791,22 @@
   height: 52px;
   padding: 0 20px;
 }
+.need__form {
+  gap: 20px;
+  .disc__label {
+    display: flex;
+    margin-bottom: 0;    
+            align-items: center;
+    input[type="checkbox"] + div {
+      max-width: 100%;
+      &:before {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+}
+
 }//767
 
 @media (max-width : 640px) {
