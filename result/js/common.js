@@ -181,6 +181,8 @@ jQuery(document).ready(function( $ ) {
 
   });
 
+  $(".tel").mask("+7 (999) 999-99-99");
+
 
   $('.accordion-header').toggleClass('inactive-header');
   $('.accordion-header').first().toggleClass('active-header').toggleClass('inactive-header');
@@ -200,6 +202,7 @@ jQuery(document).ready(function( $ ) {
   });
 
   return false;
+
 
 }); //ready
 

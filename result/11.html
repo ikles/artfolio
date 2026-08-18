@@ -342,12 +342,12 @@
             <p class="need__txt">Оставьте заявку — наш менеджер свяжется с вами и ответит на все вопросы</p>
             <form class="need__form">
   <input type="text" placeholder="Ваше имя">
-  <input type="text" placeholder="+7 ()">
+  <input type="text" class="tel" placeholder="+7 ()">
   <button class="need__btn btn">отправить</button>
   <label class="disc__label">
-                  <input type="checkbox" checked>                  
-                  <div>Даю согласие на <a href="">обработку персональных данных</a></div>
-                </label>
+    <input type="checkbox" checked>                  
+    <div>Даю согласие на <a href="">обработку персональных данных</a></div>
+  </label>
 </form>
           </div>
         </div>
@@ -391,7 +391,7 @@
       <div class="modal__title">Отправить заявку</div>
       <form>              
         <input type="text" placeholder="Ваше имя">
-        <input type="text" placeholder="+7 ()">
+        <input class="tel" type="text" placeholder="+7 ()">
         <label class="label">          
           <input type="checkbox" checked>
           <div>
@@ -424,6 +424,7 @@
 <script src="js/slick.js"></script>
 <script src="js/select2.min.js"></script>
 <script src="js/jquery.fancybox.min.js"></script>
+<script src="js/jquery.maskedinput.min.js"></script>
 <script src="js/common.js"></script>
 <script src="js/dynamic_adapt.js"></script>
 </body>
