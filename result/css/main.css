@@ -497,6 +497,11 @@ body {
     padding: 0 10px;
     min-width: unset; }
 
+.cookies.show {
+  display: block;
+  opacity: 1;
+  pointer-events: all; }
+
 .label {
   display: flex;
   cursor: pointer;
@@ -4513,6 +4518,10 @@ textarea {
   @media (max-width: 640px) {
     ._pt50 {
       padding-top: 30px; } }
+
+.w100 {
+  max-width: 100%;
+  width: 100%; }
 
 .adv-comp__video._stat {
   margin-bottom: 0; }

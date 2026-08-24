@@ -2,6 +2,22 @@ jQuery(document).ready(function( $ ) {
 
 
 
+  const $cookieBanner = $('.cookies');
+  const $acceptButton = $('.cookies__btn');
+  const STORAGE_KEY = 'cookie_consent_accepted';
+
+  if (!localStorage.getItem(STORAGE_KEY)) {
+    setTimeout(() => {
+      $cookieBanner.addClass('show');
+    }, 500);
+  }
+
+  $acceptButton.on('click', function() {
+    $cookieBanner.removeClass('show');
+    localStorage.setItem(STORAGE_KEY, 'true');
+  });
+
+
   $('body').click(function () {
     if( $(".toggle-mnu").hasClass("on") ){
       $(".toggle-mnu").removeClass("on");
