@@ -695,6 +695,78 @@ body {
       .mn__ul li a.act {
         font-weight: 500;
         color: #dc2022; }
+    @media (max-width: 1199px) {
+      .mn__ul li.parent {
+        position: relative; }
+        .mn__ul li.parent .parent-arrow {
+          position: absolute;
+          right: 0;
+          top: 0;
+          height: 20px;
+          width: 30px;
+          margin-right: 0; } }
+    @media (any-hover: hover) {
+      .mn__ul li.parent:hover .parent-arrow {
+        transform: rotate(180deg); } }
+    @media (max-width: 1199px) {
+      .mn__ul li.parent.open {
+        display: block;
+        text-align: left; }
+        .mn__ul li.parent.open ul {
+          padding-top: 25px;
+          padding-left: 10px;
+          padding-bottom: 0;
+          background: none;
+          box-shadow: none;
+          border-radius: 0;
+          opacity: 1;
+          visibility: visible;
+          position: static;
+          transform: none;
+          gap: 15px; } }
+  .mn__ul > li {
+    position: relative; }
+    @media (any-hover: hover) {
+      .mn__ul > li:hover ul {
+        opacity: 1;
+        visibility: visible; } }
+    .mn__ul > li > ul {
+      z-index: 3;
+      transform: translateY(100%);
+      bottom: 0;
+      left: -30px;
+      position: absolute;
+      border-radius: 18px;
+      max-width: 100%;
+      min-width: 273px;
+      padding: 30px;
+      box-shadow: 10px 10px 10px 0 rgba(0, 0, 0, 0.2);
+      background: #f2f2f2;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.333s; }
+      .mn__ul > li > ul li a {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1;
+        color: var(--txt); }
+        .mn__ul > li > ul li a.active {
+          color: #dc2022; }
+        @media (any-hover: hover) {
+          .mn__ul > li > ul li a:hover {
+            text-decoration: none;
+            color: #dc2022; } }
+
+.parent-arrow {
+  margin-left: 4px;
+  width: 15px;
+  height: 100%;
+  background: url("../img/parent-arrow.svg") no-repeat center; }
+  .parent-arrow.rotate {
+    transform: rotate(180deg); }
 
 .portf {
   background-repeat: no-repeat;

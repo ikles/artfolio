@@ -38,6 +38,11 @@ jQuery(document).ready(function( $ ) {
   });
 
 
+  $('.parent-arrow').click(function () {
+    $(this).toggleClass('rotate');
+    $(this).closest('li.parent').toggleClass('open');
+  });
+
   function reviewsSlider() {
     if ($(window).width() <= 640) {
       if (!$('.zon__row').hasClass('slick-initialized')) {
