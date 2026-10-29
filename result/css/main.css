@@ -772,11 +772,16 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 130px;
-  padding-bottom: 60px; }
+  padding-bottom: 60px;
+  background-size: cover; }
   .portf._inverse .portf__advant-txt,
   .portf._inverse .portf__txt,
   .portf._inverse .portf__title {
-    color: var(--txt); }
+    color: var(--tvideo__picturext); }
+  .portf img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
 
 .portf__row {
   display: flex;

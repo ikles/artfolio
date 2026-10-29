@@ -558,13 +558,19 @@ body {
   background-repeat: no-repeat;
   background-position: top center;
   padding-top: 130px;
-  padding-bottom: 60px;
+  padding-bottom: 60px;  
+  background-size: cover;
   &._inverse {
     .portf__advant-txt,
     .portf__txt,
     .portf__title {
-      color: var(--txt);
+      color: var(--tvideo__picturext);
     }
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
   }
 }
 
@@ -1638,8 +1644,7 @@ footer {
     object-fit: cover;
     width: 100%;
     height: 100%;    
-    z-index:0;    
-
+    z-index: 0;
   }
   .portf__row {
     position: relative;
