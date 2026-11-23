@@ -921,6 +921,10 @@ body {
   align-items: center;
   justify-content: center;
   flex: none; }
+  .portf__advant-img img {
+    object-fit: none;
+    width: auto;
+    height: auto; }
 
 .portf__advant-txt {
   font-weight: 500;
